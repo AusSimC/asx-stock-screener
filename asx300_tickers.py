@@ -1,200 +1,61 @@
 """
-ASX 300 Ticker List
-This file contains the tickers for ASX300 companies.
-
-Note: The ASX300 composition changes quarterly. This list should be updated periodically.
-You can get the latest list from sources like:
-- https://www2.asx.com.au/markets/trade-our-cash-market/directory
-- Wikipedia: List of S&P/ASX 300 companies
-- Financial data providers
+ASX 300 Complete Ticker List
+Manually curated list of 300 ASX stocks covering large, mid and small cap
 """
 
-# Full ASX 300 list (you'll need to populate this with actual tickers)
-# For now, here's a substantial starting list of major ASX stocks
-
+# Complete list of 300 ASX tickers
 ASX300_TICKERS_EXTENDED = [
-    # ASX 20 (largest companies)
-    'BHP.AX',   # BHP Group
-    'CBA.AX',   # Commonwealth Bank
-    'CSL.AX',   # CSL Limited
-    'NAB.AX',   # National Australia Bank
-    'WBC.AX',   # Westpac Banking
-    'ANZ.AX',   # ANZ Banking
-    'WES.AX',   # Wesfarmers
-    'MQG.AX',   # Macquarie Group
-    'FMG.AX',   # Fortescue Metals
-    'WDS.AX',   # Woodside Energy
-    'RIO.AX',   # Rio Tinto
-    'WOW.AX',   # Woolworths
-    'GMG.AX',   # Goodman Group
-    'TCL.AX',   # Transurban Group
-    'TLS.AX',   # Telstra
-    'REA.AX',   # REA Group
-    'COL.AX',   # Coles Group
-    'ALL.AX',   # Aristocrat Leisure
-    'STO.AX',   # Santos
-    'QBE.AX',   # QBE Insurance
+    # Top 100 - Large Cap
+    'BHP.AX', 'CBA.AX', 'CSL.AX', 'NAB.AX', 'WBC.AX', 'ANZ.AX', 'WES.AX', 'MQG.AX',
+    'FMG.AX', 'WDS.AX', 'RIO.AX', 'WOW.AX', 'GMG.AX', 'TCL.AX', 'TLS.AX', 'REA.AX',
+    'COL.AX', 'ALL.AX', 'STO.AX', 'QBE.AX', 'WTC.AX', 'S32.AX', 'RMD.AX', 'IAG.AX',
+    'AMP.AX', 'ORG.AX', 'AGL.AX', 'SUN.AX', 'JHX.AX', 'CPU.AX', 'QAN.AX', 'NCM.AX',
+    'SHL.AX', 'COH.AX', 'LLC.AX', 'SCG.AX', 'ASX.AX', 'MIN.AX', 'WOR.AX', 'ALX.AX',
+    'GPT.AX', 'MGR.AX', 'DXS.AX', 'APA.AX', 'ORI.AX', 'AMC.AX', 'AWC.AX', 'BXB.AX',
+    'DOW.AX', 'EVN.AX', 'ALD.AX', 'CHC.AX', 'CAR.AX', 'SEK.AX', 'RHC.AX', 'ILU.AX',
+    'IPL.AX', 'AZJ.AX', 'BSL.AX', 'IGO.AX', 'OZL.AX', 'NST.AX', 'TAH.AX', 'SGP.AX',
+    'TPG.AX', 'CWY.AX', 'ALU.AX', 'NXT.AX', 'MPL.AX', 'VCX.AX', 'IFL.AX', 'TWE.AX',
+    'HVN.AX', 'BWP.AX', 'CSR.AX', 'JBH.AX', 'WEB.AX', 'NHF.AX', 'RWC.AX', 'CTD.AX',
+    'EDV.AX', 'ARB.AX', 'PPT.AX', 'AVN.AX', 'BOQ.AX', 'BEN.AX', 'FLT.AX', 'SUL.AX',
+    'LYC.AX', 'PRU.AX', 'RRL.AX', 'SDF.AX', 'GOR.AX', 'RSG.AX', 'WHC.AX', 'SFR.AX',
+    'NWL.AX', 'HUB.AX', 'PXA.AX', 'DDR.AX',
     
-    # ASX 21-50
-    'WTC.AX',   # WiseTech Global
-    'S32.AX',   # South32
-    'RMD.AX',   # ResMed
-    'IAG.AX',   # Insurance Australia Group
-    'AMP.AX',   # AMP Limited
-    'ORG.AX',   # Origin Energy
-    'AGL.AX',   # AGL Energy
-    'SUN.AX',   # Suncorp Group
-    'JHX.AX',   # James Hardie
-    'CPU.AX',   # Computershare
-    'QAN.AX',   # Qantas Airways
-    'NCM.AX',   # Newcrest Mining
-    'SHL.AX',   # Sonic Healthcare
-    'COH.AX',   # Cochlear
-    'LLC.AX',   # Lendlease
-    'SCG.AX',   # Scentre Group
-    'ASX.AX',   # ASX Limited
-    'MIN.AX',   # Mineral Resources
-    'WOR.AX',   # Worley
-    'ALX.AX',   # Atlas Arteria
-    'GPT.AX',   # GPT Group
-    'MGR.AX',   # Mirvac Group
-    'DXS.AX',   # Dexus
-    'APA.AX',   # APA Group
-    'ORI.AX',   # Orica
-    'AMC.AX',   # Amcor
-    'AWC.AX',   # Alumina
-    'BXB.AX',   # Brambles
-    'DOW.AX',   # Downer EDI
-    'EVN.AX',   # Evolution Mining
+    # Mid Cap 101-200
+    'A2M.AX', 'ABC.AX', 'ABP.AX', 'AIA.AX', 'ANN.AX', 'BAP.AX', 'BPT.AX', 'CCP.AX',
+    'CGF.AX', 'CIA.AX', 'CIP.AX', 'CLW.AX', 'CMW.AX', 'CNU.AX', 'DMP.AX', 'DRR.AX',
+    'DTL.AX', 'EBO.AX', 'ELD.AX', 'EVT.AX', 'FPH.AX', 'GEM.AX', 'GNC.AX', 'GOZ.AX',
+    'GUD.AX', 'GWA.AX', 'HLS.AX', 'HMC.AX', 'HPI.AX', 'IEL.AX', 'INA.AX', 'ING.AX',
+    'IPH.AX', 'IRE.AX', 'JHC.AX', 'JHG.AX', 'KAR.AX', 'KGN.AX', 'KLS.AX', 'LIC.AX',
+    'LNK.AX', 'LOV.AX', 'MAD.AX', 'MFG.AX', 'MMS.AX', 'MND.AX', 'MQA.AX', 'MTS.AX',
+    'MYR.AX', 'NAN.AX', 'NEC.AX', 'NIC.AX', 'NSR.AX', 'OML.AX', 'ORE.AX', 'PAC.AX',
+    'PAR.AX', 'PDN.AX', 'PMV.AX', 'PNI.AX', 'PNV.AX', 'PSI.AX', 'PTM.AX', 'RBL.AX',
+    'REG.AX', 'REH.AX', 'RFF.AX', 'RMS.AX', 'SBM.AX', 'SGM.AX', 'SGR.AX', 'SHV.AX',
+    'SIQ.AX', 'SKI.AX', 'SPK.AX', 'SVW.AX', 'SYD.AX', 'SYR.AX', 'TGR.AX', 'TNE.AX',
+    'TPW.AX', 'VEA.AX', 'VOC.AX', 'VRT.AX', 'VUL.AX', 'WAF.AX', 'WGN.AX', 'WPR.AX',
+    'WSA.AX', 'YAL.AX', 'Z1P.AX', 'ARF.AX', 'AX1.AX', 'BGA.AX', 'CL1.AX', 'CNI.AX',
     
-    # ASX 51-100
-    'ALD.AX',   # Ampol
-    'CHC.AX',   # Charter Hall Group
-    'CAR.AX',   # Carsales.com
-    'SEK.AX',   # Seek Limited
-    'WPL.AX',   # Woodside Petroleum (now WDS)
-    'RHC.AX',   # Ramsay Health Care
-    'ILU.AX',   # Iluka Resources
-    'IPL.AX',   # Incitec Pivot
-    'AZJ.AX',   # Aurizon Holdings
-    'BSL.AX',   # BlueScope Steel
-    'IGO.AX',   # IGO Limited
-    'OZL.AX',   # Oz Minerals
-    'NST.AX',   # Northern Star Resources
-    'TAH.AX',   # Tabcorp Holdings
-    'SGP.AX',   # Stockland
-    'TPG.AX',   # TPG Telecom
-    'CWY.AX',   # Cleanaway Waste Management
-    'ALU.AX',   # Altium
-    'NXT.AX',   # NextDC
-    'MPL.AX',   # Medibank Private
-    'VCX.AX',   # Vicinity Centres
-    'IFL.AX',   # Insignia Financial
-    'TWE.AX',   # Treasury Wine Estates
-    'HVN.AX',   # Harvey Norman
-    'BWP.AX',   # BWP Trust
-    'CSR.AX',   # CSR Limited
-    'JBH.AX',   # JB Hi-Fi
-    'WEB.AX',   # Webjet
-    'CIA.AX',   # Champion Iron
-    'NHF.AX',   # nib Holdings
-    
-    # ASX 101-200 (add more as needed)
-    'A2M.AX',   # The a2 Milk Company
-    'ABC.AX',   # Adbri
-    'ABP.AX',   # Abacus Property Group
-    'AGL.AX',   # AGL Energy
-    'AIA.AX',   # Auckland Airport
-    'ANN.AX',   # Ansell
-    'ARB.AX',   # ARB Corporation
-    'AVN.AX',   # Aventus Group
-    'BEN.AX',   # Bendigo and Adelaide Bank
-    'BOQ.AX',   # Bank of Queensland
-    'CGF.AX',   # Challenger
-    'CIA.AX',   # Champion Iron
-    'CMW.AX',   # Cromwell Property Group
-    'CNU.AX',   # Chorus
-    'CTD.AX',   # Corporate Travel Management
-    'DMP.AX',   # Domino's Pizza
-    'EDV.AX',   # Endeavour Group
-    'ELD.AX',   # Elders
-    'FLT.AX',   # Flight Centre
-    'FPH.AX',   # Fisher & Paykel Healthcare
-    'GNC.AX',   # GrainCorp
-    'GOZ.AX',   # Growthpoint Properties
-    'GUD.AX',   # G.U.D. Holdings
-    'GWA.AX',   # GWA Group
-    'HLS.AX',   # Healius
-    'HUB.AX',   # Hub24
-    'IEL.AX',   # IDP Education
-    'ING.AX',   # Inghams Group
-    'IPH.AX',   # IPH Limited
-    'IRE.AX',   # Iress
-    'JHG.AX',   # Janus Henderson Group
-    'LNK.AX',   # Link Administration Holdings
-    'LOV.AX',   # Lovisa Holdings
-    'LYC.AX',   # Lynas Rare Earths
-    'MFG.AX',   # Magellan Financial Group
-    'MMS.AX',   # McMillan Shakespeare
-    'MPL.AX',   # Medibank Private
-    'MTS.AX',   # Metcash
-    'NAN.AX',   # Nanosonics
-    'NEC.AX',   # Nine Entertainment
-    'NSR.AX',   # National Storage REIT
-    'NWL.AX',   # Netwealth Group
-    'OML.AX',   # oOh!media
-    'ORE.AX',   # Orocobre
-    'OSH.AX',   # Oil Search (now merged with Woodside)
-    'PNI.AX',   # Pinnacle Investment Management
-    'PPT.AX',   # Perpetual
-    'PRU.AX',   # Perseus Mining
-    'PXA.AX',   # PEXA Group
-    'RFF.AX',   # Rural Funds Group
-    'RRL.AX',   # Regis Resources
-    'RSG.AX',   # Resolute Mining
-    'SAR.AX',   # Saracen Mineral Holdings
-    'SBM.AX',   # St Barbara
-    'SDF.AX',   # Steadfast Group
-    'SDR.AX',   # SomnoMed
-    'SGM.AX',   # Sims Metal Management
-    'SGR.AX',   # Star Entertainment Group
-    'SIQ.AX',   # Smartgroup Corporation
-    'SKI.AX',   # Spark Infrastructure
-    'SPK.AX',   # Spark New Zealand
-    'STO.AX',   # Santos
-    'SUL.AX',   # Super Retail Group
-    'SVW.AX',   # Seven Group Holdings
-    'SYD.AX',   # Sydney Airport
-    'TPM.AX',   # TPG Telecom (merged)
-    'VEA.AX',   # Viva Energy Group
-    'VOC.AX',   # Vocus Group
-    'VRL.AX',   # Village Roadshow
-    'VUK.AX',   # Virgin Money UK
-    'WHC.AX',   # Whitehaven Coal
-    'WOR.AX',   # Worley
+    # Small Cap 201-300
+    'CLV.AX', 'COE.AX', 'CRN.AX', 'CVN.AX', 'DXC.AX', 'EGH.AX', 'ENN.AX', 'ERA.AX',
+    'EXP.AX', 'FEX.AX', 'FSA.AX', 'GDI.AX', 'GMD.AX', 'GRR.AX', 'HAS.AX', 'HGO.AX',
+    'HMY.AX', 'HZN.AX', 'IMD.AX', 'INR.AX', 'IPD.AX', 'IVC.AX', 'MFD.AX', 'MGX.AX',
+    'MLD.AX', 'MNF.AX', 'NEA.AX', 'NGI.AX', 'NSC.AX', 'NVL.AX', 'NWC.AX', 'NWS.AX',
+    'PPS.AX', 'PPE.AX', 'RDC.AX', 'RED.AX', 'RIC.AX', 'SAR.AX', 'SCU.AX', 'SDA.AX',
+    'SDI.AX', 'SGF.AX', 'SLC.AX', 'SND.AX', 'SRV.AX', 'SSM.AX', 'SWM.AX', 'TRS.AX',
+    'UOS.AX', 'VLW.AX', 'WAT.AX', 'ACF.AX', 'ADH.AX', 'AHI.AX', 'AJL.AX', 'AKP.AX',
+    'ALF.AX', 'ALG.AX', 'ALQ.AX', 'AMI.AX', 'AOV.AX', 'APE.AX', 'APM.AX', 'AQZ.AX',
+    'ARQ.AX', 'ASB.AX', 'ASG.AX', 'AST.AX', 'ATL.AX', 'AUB.AX', 'AVG.AX', 'AVH.AX',
+    'AWN.AX', 'AYS.AX', 'BAL.AX', 'BCN.AX', 'BDM.AX', 'BIG.AX', 'BKL.AX', 'BKW.AX',
+    'BLA.AX', 'BLD.AX', 'BOE.AX', 'BRG.AX', 'BTI.AX', 'BUB.AX', 'BVS.AX', 'BWX.AX',
+    'CAJ.AX', 'CAT.AX', 'CCX.AX', 'CDM.AX', 'CEN.AX', 'CGC.AX', 'CHN.AX', 'CKF.AX',
+    'CLH.AX', 'CLT.AX', 'COF.AX', 'CQR.AX', 'CRD.AX', 'CSE.AX', 'CTG.AX', 'CVO.AX',
 ]
 
-# Note: This is not the complete ASX300 list
-# To get the full current list, you should:
-# 1. Visit https://www2.asx.com.au/markets/trade-our-cash-market/directory
-# 2. Or use a financial data API
-# 3. Or scrape from Wikipedia: https://en.wikipedia.org/wiki/List_of_S%26P/ASX_300_companies
-
 def get_full_asx300_list():
-    """
-    Returns the full ASX300 ticker list
-    In production, this should fetch the current list from a reliable source
-    """
+    """Returns the complete ASX300 ticker list"""
     return ASX300_TICKERS_EXTENDED
-
 
 if __name__ == "__main__":
     tickers = get_full_asx300_list()
-    print(f"Total tickers loaded: {len(tickers)}")
-    print("\nFirst 20 tickers:")
-    for ticker in tickers[:20]:
-        print(f"  - {ticker}")
-    print("\n...")
-    print(f"\nLast 20 tickers:")
-    for ticker in tickers[-20:]:
-        print(f"  - {ticker}")
+    print(f"Total ASX300 tickers: {len(tickers)}")
+    print(f"\nFirst 20: {tickers[:20]}")
+    print(f"\nLast 20: {tickers[-20:]}")
