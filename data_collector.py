@@ -10,13 +10,18 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 import time
 
-# ASX 300 tickers - Sample subset for testing (will expand to full list)
-ASX300_TICKERS = [
-    'BHP.AX', 'CBA.AX', 'CSL.AX', 'NAB.AX', 'WBC.AX', 'ANZ.AX', 'WES.AX', 'MQG.AX',
-    'FMG.AX', 'WDS.AX', 'RIO.AX', 'WOW.AX', 'GMG.AX', 'TCL.AX', 'TLS.AX', 'REA.AX',
-    'COL.AX', 'ALL.AX', 'STO.AX', 'QBE.AX', 'WTC.AX', 'S32.AX', 'RMD.AX', 'IAG.AX',
-    'AMP.AX', 'ORG.AX', 'AGL.AX', 'SUN.AX', 'JHX.AX', 'CPU.AX'
-]
+# Import the extended ASX300 ticker list
+try:
+    from asx300_tickers import ASX300_TICKERS_EXTENDED
+    ASX300_TICKERS = ASX300_TICKERS_EXTENDED
+except ImportError:
+    # Fallback to a smaller list if the extended list file isn't available
+    ASX300_TICKERS = [
+        'BHP.AX', 'CBA.AX', 'CSL.AX', 'NAB.AX', 'WBC.AX', 'ANZ.AX', 'WES.AX', 'MQG.AX',
+        'FMG.AX', 'WDS.AX', 'RIO.AX', 'WOW.AX', 'GMG.AX', 'TCL.AX', 'TLS.AX', 'REA.AX',
+        'COL.AX', 'ALL.AX', 'STO.AX', 'QBE.AX', 'WTC.AX', 'S32.AX', 'RMD.AX', 'IAG.AX',
+        'AMP.AX', 'ORG.AX', 'AGL.AX', 'SUN.AX', 'JHX.AX', 'CPU.AX'
+    ]
 
 def get_asic_short_data(weeks: int = 6) -> pd.DataFrame:
     """
